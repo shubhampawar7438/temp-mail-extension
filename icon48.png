@@ -1,0 +1,16 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <!-- Background with rounded corners -->
+  <rect width="48" height="48" rx="8" fill="#3498db"/>
+  
+  <!-- Modern envelope design -->
+  <path d="M7.199999999999999,14.399999999999999 L40.8,14.399999999999999 L40.8,33.599999999999994 L7.199999999999999,33.599999999999994 Z" 
+        fill="white" stroke="#3498db" stroke-width="0.96"/>
+  
+  <!-- Envelope flap -->
+  <path d="M7.199999999999999,14.399999999999999 L24,26.400000000000002 L40.8,14.399999999999999" 
+        fill="none" stroke="white" stroke-width="0.96" stroke-linecap="round"/>
+  
+  <!-- Notification dot -->
+  <circle cx="38.400000000000006" cy="12" r="3.84" fill="#e74c3c"/>
+</svg>

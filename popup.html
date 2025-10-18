@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TempMail Tester</title>
+  <!-- Include Font Awesome for professional icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="header-top">
+        <h1><i class="fas fa-envelope"></i> TempMail Tester</h1>
+        <div class="window-controls">
+          <button id="minimizeBtn" class="window-btn" title="Minimize"><i class="fas fa-minus"></i></button>
+          <button id="expandBtn" class="window-btn" title="Expand"><i class="fas fa-expand"></i></button>
+          <button id="closeBtn" class="window-btn" title="Close"><i class="fas fa-times"></i></button>
+        </div>
+      </div>
+      <div class="controls">
+        <button id="newInboxBtn" class="btn-primary"><i class="fas fa-plus-circle"></i> New Inbox</button>
+        <button id="toggleAutoRefresh" class="btn-secondary"><i class="fas fa-sync-alt"></i> Auto Refresh: ON</button>
+        <select id="pollingInterval">
+          <option value="5000"><i class="fas fa-clock"></i> 5s</option>
+          <option value="10000"><i class="fas fa-clock"></i> 10s</option>
+          <option value="30000"><i class="fas fa-clock"></i> 30s</option>
+        </select>
+      </div>
+    </div>
+    
+    <div class="tabs-container">
+      <div id="tabs" class="tabs"></div>
+      <div id="activeInboxHeader" class="active-inbox-header">
+        <div class="inbox-info">
+          <span id="activeInboxEmail" class="inbox-email"></span>
+          <div class="inbox-actions">
+            <button id="copyEmailBtn" class="btn-icon" title="Copy Email"><i class="fas fa-copy"></i></button>
+            <button id="deleteInboxBtn" class="btn-icon" title="Delete Inbox"><i class="fas fa-trash-alt"></i></button>
+          </div>
+        </div>
+      </div>
+      <div id="tabContent" class="tab-content">
+        <div class="message-list" id="messageList"></div>
+      </div>
+    </div>
+    
+    <div class="status-bar">
+      <div id="status" class="status"><i class="fas fa-info-circle"></i> Ready</div>
+      <div class="api-info">API: mail.tm | v1.0</div>
+    </div>
+  </div>
+  
+  <script src="popup.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "tempmail-tester-extension",
+  "version": "1.0.0",
+  "description": "Chrome extension for testing temporary email services",
+  "type": "module",
+  "main": "background.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "chrome-extension",
+    "temp-mail",
+    "email-testing"
+  ],
+  "author": "TempMail Tester",
+  "license": "MIT",
+  "devDependencies": {
+    "playwright": "^1.40.0"
+  }
+}
