@@ -2,6 +2,8 @@
 
 A Chrome extension for testing temporary email services with the mail.tm API.
 
+![Output](output.png)
+
 ## Features
 
 - Create temporary email inboxes
@@ -97,4 +99,5 @@ The extension now features:
 - Hover effects and subtle animations
 - Responsive design that works on different screen sizes
 - Better error handling with user-friendly messages
+
 - Window management controls (minimize, expand, close)
